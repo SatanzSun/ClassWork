@@ -36,7 +36,7 @@ namespace Day3
                 y++;
                 if (y == 20)
                 {
-                    break;
+                    x = false;
                 }
 
             }

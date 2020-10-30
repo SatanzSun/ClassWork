@@ -8,11 +8,11 @@ namespace Day4
         {
             string[] x = { "Janis", "Peteris", "Arturs", "Juris", "Oskars", "Antons" };
             int i = 0;
-            do 
+            do
             {
                 Console.Write(x[i] + ", ");
                 i++;
-            }while (i < x.Length);
+            } while (i < x.Length);
         }
         static void Task2()
         {
@@ -26,7 +26,7 @@ namespace Day4
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i] > 5)
-                Console.Write(numbers[i] + ", ");
+                    Console.Write(numbers[i] + ", ");
             }
         }
         static void Task3()
@@ -43,7 +43,7 @@ namespace Day4
         {
             int[] x = new int[10];
 
-            for(int i = 0; i < x.Length; i++)
+            for (int i = 0; i < x.Length; i++)
             {
                 x[i] = i;
             }
@@ -52,7 +52,7 @@ namespace Day4
         {
             string x = Console.ReadLine();
 
-            for (int i =  x.Length; i > 0; i--)
+            for (int i = x.Length; i > 0; i--)
             {
                 Console.Write(x[i] + ", ");
             }
@@ -87,6 +87,6 @@ namespace Day4
                     Console.WriteLine("skaitlis arpus robezam");
                     break;
             }
-            }
+        }
     }
 }

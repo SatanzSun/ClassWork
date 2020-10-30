@@ -44,7 +44,7 @@ namespace Day3
 
         static void Task4()
         {
-            Console.WriteLine("Ievadiewt skaitli");
+            Console.WriteLine("Ievadiet skaitli");
             int x = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < x; i++)
             {
@@ -65,7 +65,7 @@ namespace Day3
             {
                 Console.Write(x[i] + ", ");
             }
-            Console.WriteLine(" ");
+            Console.WriteLine();
             int[] y = new int[x.Length];
             for (int i = 0; i < x.Length; i++)
             {

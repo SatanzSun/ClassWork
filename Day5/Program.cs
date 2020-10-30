@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Text;
 namespace Day5
 {
     class Program
@@ -21,7 +21,7 @@ namespace Day5
         {
             string[] x = { "Janis", "Peteris", "Arturs", "Juris", "Oskars", "Antons", "Aldis", "Nils", "Uldis", "Kārlis" };
             string[] y = { "Jansons", "Petersons", "Arturovs", "Jurkalns", "Oskarsons", "Antonovs", "Aldinieks", "Niliņš", "Uldāns", "Kārliņš" };
-            string[] z = new string[10];
+            string[] z = new string[x.Length];
             for (int i = 0; i < z.Length; i++)
             {
                 z[i] = (x[i] + " " + y[i]);
@@ -50,7 +50,7 @@ namespace Day5
         }
         static void Task4()
         {
-            string[] x = {"jānis", "pēteris", "andris", "sergejs", "antons"};
+            string[] x = { "jānis", "pēteris", "andris", "sergejs", "antons" };
             char a = 'a';
             char b = 'ā';
             for (int i = 0; i < x.Length; i++)
@@ -66,7 +66,7 @@ namespace Day5
             int[] x = { 1, 56, 77, 89, 34, 22, 2, 3, 4, 8, 43, 56 };
             for (int i = 0; i < x.Length; i++)
             {
-                if (x[i] >= 0 && x[i] <=30)
+                if (x[i] >= 0 && x[i] <= 30)
                 {
                     Console.Write(x[i] + ", ");
                 }
@@ -92,7 +92,7 @@ namespace Day5
         {
             int[,] x = new int[5, 5]{
                 { 1, 2, 3, 4, 5 },
-                {6, 7, 8, 9, 10 },
+                { 6, 7, 8, 9, 10 },
                 { 11, 12, 13, 14, 15 },
                 { 16, 17, 18, 19, 20 },
                 { 21, 22, 23, 24, 25 }
@@ -109,6 +109,7 @@ namespace Day5
         }
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("ievadiet uzdevuma nummuru 1 - 6");
             String x = Console.ReadLine();
             switch (x.Trim())
@@ -138,7 +139,7 @@ namespace Day5
                     break;
 
                 default:
-                    Console.WriteLine("skaitlis arpus robezam");
+                    Console.WriteLine("skaitlis ārpus robezam");
                     break;
 
             }

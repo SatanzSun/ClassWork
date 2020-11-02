@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Day6
 {
     class CietaisRieksts
     {
-        public static void Task5()
+        public static int Factorial(int n)
         {
-            Console.WriteLine("Ievadat skaitli lielāku par nulli");
-            int n = Console.Read();
-
+            return n  > 0 ? n * Factorial(n - 1) : 1;
         }
-     /*   public static int maths()
-        {
-
-        }*/
     }
 }

@@ -26,7 +26,9 @@ namespace Day6
                     break;
 
                 case "4":
-                    CietaisRieksts.();
+                    Console.WriteLine("Ievadat skaitli lielāku par nulli");
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"Faktoriāls no {n} ir {CietaisRieksts.Factorial(n)}");
                     break;
 
                 case "exit":

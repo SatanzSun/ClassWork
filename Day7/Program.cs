@@ -5,7 +5,7 @@ namespace Day7
     class Program
 
     {
-        
+
         static void Main(string[] args)
         {
             Console.WriteLine("Ievadiet uzdevuma nr. vai exit, lai izietu.");
@@ -39,21 +39,37 @@ namespace Day7
                     break;
 
                 case "4":
-                    string[] names = {"Jānis", "", "Pēteris", "Antons", "", "Andris"};
+                    string[] names = { "Jānis", "", "Pēteris", "Antons", "", "Andris" };
                     Task3.PrintArrayValues(names);
                     string[] editedArray = Task4.GetNonEmtyArray(names);
                     Console.WriteLine();
                     Task3.PrintArrayValues(editedArray);
                     break;
 
-                /*case "4":
-                    Console.WriteLine("Ievadat skaitli lielāku par nulli");
-                    int n = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Faktoriāls no {n} ir {CietaisRieksts.Factorial(n)}");
+                case "5":
+                    while (true)
+                    {
+                        Console.WriteLine("Ievadat skaitļus kurus vēlaties saskaitīt. Lai beigtu ievadat pirmā skaitļa vietā 'exit'");
+                        Console.WriteLine("Ievadat pirmo skaitli:");
+
+                        string a = Console.ReadLine();
+                        if (a == "exit")
+                        {
+                            break;
+                        }
+                        int x = Convert.ToInt32(a);
+                        Console.WriteLine("Ievadat otro skaitli:");
+                        int y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Skaitļu summa ir " + Task5.CalculateSum(x, y));
+                    }
+                    break;
+
+                case "6":
+
                     break;
 
                 case "exit":
-                    break;*/
+                    break;
 
                 default:
                     Console.WriteLine("skaitlis arpus robezam");

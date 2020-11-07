@@ -65,7 +65,24 @@ namespace Day7
                     break;
 
                 case "6":
-
+                    Console.WriteLine("Ievadat personas kodu formātā '123456-78910'");
+                    bool check = true;
+                    while (check)
+                    {
+                        string personId = Console.ReadLine();
+                        if (Task6.ValidatePersonId(personId))
+                        {
+                            check = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Personas kods Ievadīts nepareizā formātā.");
+                        }
+                        if (!check)
+                        {
+                            Task6.PrintBirthday(personId);
+                        }
+                    }
                     break;
 
                 case "exit":

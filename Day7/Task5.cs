@@ -8,7 +8,7 @@ namespace Day7
     {
         public static int CalculateSum(int x, int y)
         {
-            return (x + y);
+            return x + y;
         }
     }
 }
